@@ -1,0 +1,16 @@
+.product-container {
+    display : flex;
+    border-bottom: 1px solid lightgray;
+}
+.product-name {
+    font-weight: 400;
+    color: blue;
+    margin-top: 30px;
+}
+.cart-button {
+    height: 25px;
+    width: 120px;
+    background-color: rgb(235, 175, 23);
+    border-color: transparent;
+    border-radius: 5px;
+}
