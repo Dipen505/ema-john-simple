@@ -5,11 +5,14 @@ import './Shop.css';
 const Shop = () => {
     const firstTen = data.slice(0,10);
     const [products,setProducts] = useState(firstTen);
+    const productAddedHandler = (item) => {
+        console.log('clicked',item);
+    }
     return (
         <div className='shop-container'>
           <div className='products-container'>
           {
-              products.map(products=><Product key = {products.key} detail = {products}></Product>)
+              products.map(products=><Product productAddedHandler = {productAddedHandler} key = {products.key} detail = {products}></Product>)
           }
           </div>
           <div className='cart-container'>
